@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.part-1 {
+    background-color: grey;
+    background-image: url('./bbq.JPG');
+    background-blend-mode: multiply;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 3.5rem;
+    margin: auto auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+h2 {
+    padding: 30px 0;
+    font-size: 1.75rem;
+}
+
+.part-1 p,
+h2 {
+    text-transform: uppercase;
+    color: #f18119;
+}
+
+.part-1 p {
+    font-size: 1rem;
+}
+
+.part-1 p {
+    letter-spacing: 1.5px;
+    font-size: 0.625rem;
+    font-weight: 900;
+    order: -1;
+    border-top: 5px solid #f18119;
+    border-image: linear-gradient(to right, #ffa51d, #ff713b) 1;
+    padding-top: 8px;
+}
+
+.part-2 {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part-2 h2 {
+    color: black;
+    font-size: 27px;
+    font-weight: 900;
+    text-transform: none;
+    padding-bottom: 0;
+}
+
+h3 {
+    color: #f18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.part-2 p {
+    text-align: center;
+    padding: 0 15px;
+    font-size: 20px;
+    color: #5A5A5A;
+    font-weight: 300;
+}
+
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    text-align: center;
+    color: #5A5A5A;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: 1px solid #818181;
+    padding: 6px 30px;
+    opacity: 0.8;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+input:focus {
+    transform: scale(1.1);
+}
+button {
+    padding: 8px 100px;
+    border-radius: 7px;
+    background: transparent linear-gradient(270deg, #FF713B 0%, #FFA51D 100%) 0% 0% no-repeat padding-box;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.5;
+    font-size: 14px;
+    border: none;
+}
+button:hover,
+button:focus{
+    cursor: pointer;
+    background: #818181;
+
+}
+.fine-print p{
+    font-size: 13px;
+    color: #989898;
+ 
+}
+
+@media all and (min-width: 950px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .part-1{
+        width: 50%;
+        height: 100vh;
+        background-size: cover;
+        padding: 0 100px;
+        text-align: center;
+    }
+    .part-1 h2{
+        
+    }
+    h1{
+        font-size: 3.5rem;
+        margin-bottom: 0;
+        margin-top: 294px;
+     
+    }
+    .part-2{
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 0 50px;
+    }
+}
