@@ -1,1 +1,2 @@
 # bbq-website
+![](bbq.JPG)
